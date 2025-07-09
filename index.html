@@ -3,45 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
+  <div class="container">
   <aside class="sidebar">
-    <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Settings</a></li>
+    <nav>
+    <ul id="sidebar-main">
+      <li id="dashboard"><img class="dashboard-icon" src="icons/view-dashboard.svg" alt="Dashboard-icon"><a href="#">Dashboard</a></li>
+      <li><img src="icons/home.svg" class="icons" alt=""><a href="#">Home</a></li>
+      <li><img src="icons/id-card.svg" class="icons" alt=""><a href="#">Profile</a></li>
+      <li><img src="icons/message.svg" class="icons"  alt=""><a href="#">Messages</a></li>
+      <li><img src="icons/history.svg" class="icons" alt=""><a href="#">History</a></li>
+      <li><img src="icons/file-multiple.svg" class="icons" alt=""><a href="#">Tasks</a></li>
+      <li><img src="icons/account-group.svg" class="icons" alt=""><a href="#">Communities</a></li>
+    </ul>
+    <ul id="sidebar-setting">
+      <li><img src="icons/cog.svg" class="icons" alt=""><a href="#">Settings</a></li>
+      <li><img src="icons/help.svg" class="icons" alt=""><a href="#">Support</a></li>
+      <li><img src="icons/shield-check.svg" class="icons" alt=""><a href="#">Privacy</a></li>
     </ul>
   </aside>
+  </div>
 
   <main class="main-content">
-    <header>
-        <div id="top-row-header">
-            <img src="icons/magnify.svg" alt="Search Icon" width="24" height="24">
-            <textarea name="Search" id="search-area"></textarea>
-            <img src="icons/bell-outline.svg" alt="Notification Icon" width="24" height="24">
-            <img src="" alt="Profile Picture">
-            <p>Morgan Oakely</p>
+    <div class="header">
+    <input type="text" placeholder="Search..." style="flex: 1; margin-right: 20px; padding: 8px;">
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <strong>Morgan Oakley</strong>
+    <div class="icon"></div>
+  </div>
+    <div class="main">
+    <div>
+      <h2>Your Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <div class="project-header">Super Cool Project</div>
+          <div class="project-body">Sed tempus ut lacus ut scelerisque...</div>
         </div>
-        <div id="bottom-row-header">
-        <div id="bottom-left-column-header">
-          <img src="" alt="Profile Picture">
-          <p>Hi there,</p>
-          <h2>Morgan Oakely(@morgan)</h2>
+        <div class="card">
+          <div class="project-header">Less Cool Project</div>
+          <div class="project-body">Nullam condimentum ipsum ut lectus vehicula...</div>
         </div>
-        <div id="bottom-right-column-header">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+        <div class="card">
+          <div class="project-header">Impossible App</div>
+          <div class="project-body">In hac habitasse platea dictumst...</div>
         </div>
+        <div class="card">
+          <div class="project-header">Easy Peasy App</div>
+          <div class="project-body">Etiam cursus eros ac efficitur fringilla...</div>
         </div>
-    </header>
-    <h1>Welcome</h1>
-    <p>This is the main content area.</p>
-  </main>
-</div>
-    
+        <div class="card">
+          <div class="project-header">Ad Blocker</div>
+          <div class="project-body">Quisque eget rutrum nisl...</div>
+        </div>
+        <div class="card">
+          <div class="project-header">Money Maker</div>
+          <div class="project-body">Praesent convallis libero quis...</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <p><strong>Site Maintenance</strong><br> Vestibulum condimentum tellus lacus...</p>
+        <p><strong>Community Share Day</strong><br> Nam vel lectus tincidunt...</p>
+        <p><strong>Updated Privacy Policy</strong><br> Phasellus efficitur nisi eget elit...</p>
+      </div>
+
+      <div class="trending">
+        <h3>Trending</h3>
+        <div class="trending-user">
+          <img src="https://via.placeholder.com/30" alt="user">
+          <span>@tegan - World Peace Builder</span>
+        </div>
+        <div class="trending-user">
+          <img src="https://via.placeholder.com/30" alt="user">
+          <span>@morgan - Super Cool Project</span>
+        </div>
+        <div class="trending-user">
+          <img src="https://via.placeholder.com/30" alt="user">
+          <span>@kendall - Life Changing App</span>
+        </div>
+        <div class="trending-user">
+          <img src="https://via.placeholder.com/30" alt="user">
+          <span>@alex - No Traffic Maker</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
